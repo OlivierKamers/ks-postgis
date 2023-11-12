@@ -5,3 +5,9 @@ services:
       - "5432:${DB_PORT}"
     env_file:
       - .env
+  server:
+    build: ./server
+    ports:
+      - "3000:${SERVER_PORT}"
+    env_file:
+      - .env
