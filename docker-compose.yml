@@ -11,3 +11,9 @@ services:
       - "3000:${SERVER_PORT}"
     env_file:
       - .env
+  app:
+    build: ./app
+    ports:
+      - "80:${APP_PORT}"
+    env_file:
+      - .env

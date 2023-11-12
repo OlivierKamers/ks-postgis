@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postgis demo</title>
+  </head>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      font-size: x-large;
+    }
+
+    .map {
+      width: 100%;
+      height: 800px;
+    }
+  </style>
+
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+    <div id="map" class="map"></div>
+    <label for="showVectorLayer"> Show vector tile layer </label>
+    <input type="checkbox" id="showVectorLayer" checked />
+    <br />
+    <label for="showBaseLayer"> Show Open Street Map layer </label>
+    <input type="checkbox" id="showBaseLayer" checked />
+    <br />
+    <label for="showTileDebug"> Show tile grid </label>
+    <input type="checkbox" id="showTileDebug" />
+  </body>
+</html>
