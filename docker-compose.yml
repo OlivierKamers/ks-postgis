@@ -1,0 +1,7 @@
+services:
+  db:
+    build: ./db
+    ports:
+      - "5432:${DB_PORT}"
+    env_file:
+      - .env
